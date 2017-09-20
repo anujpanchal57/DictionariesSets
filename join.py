@@ -1,10 +1,12 @@
-# myList = ["a", "b", "c", "d"]
-# letters = "abcdefghijklmnopqrstuvwxyz"
-#
-# # Instead of using FOR loop to append characters to the newString, we can directly use JOIN method
-# newString = ", ".join(letters)
-#
-# print(newString)
+myList = ["a", "b", "c", "d"]
+letters = "abcdefghijklmnopqrstuvwxyz"
+
+# Instead of using FOR loop to append characters to the newString, we can directly use JOIN method
+newString = ", ".join(letters)
+
+print(newString)
+
+# Small Game related code
 
 locations = {0: "You are sitting in front of a computer learning python",
              1: "You are standing at the end of a road before a small brick building",
