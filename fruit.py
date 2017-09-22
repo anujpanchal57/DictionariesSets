@@ -14,14 +14,14 @@ print(veg)
 
 # Adding fruit dictionary to the veg dictionary,
 # It merges fruit dict into the veg dict
-# veg.update(fruit)
-# print(veg)
+veg.update(fruit)
+print(veg)
 
-# # This line returns NONE
-# print(fruit.update(veg))
+# This line returns NONE
+print(fruit.update(veg))
 
-# # This line returns the merged dicts of fruit and veg
-# print(fruit)
+# This line returns the merged dicts of fruit and veg
+print(fruit)
 
 # Merging two dicts with the help of COPY Method
 CopyExample = fruit.copy()
