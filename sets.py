@@ -92,4 +92,69 @@ print("SQUARES MINUS EVEN")
 print(sorted(squares.difference(even)))
 print(sorted(squares - even))
 
+# This line updates the EVEN set after calculating the difference between the two sets
+even.difference_update(squares)
+print(sorted(even))
+
+even = set(range(0, 40, 2))
+print(sorted(even))
+
+squares_tuple = (4, 6, 9, 16, 25)
+squares = set(squares_tuple)
+print(sorted(squares))
+
+print("\n")
+
+# This will print the Symmetric difference between the two sets EVEN and SQUARES
+print("Symmetric Difference Even minus Squares")
+print(sorted(even.symmetric_difference(squares)))
+
+print("\n")
+
+# This will print the Symmetric Difference between the two sets SQUARES and EVEN
+# Both will produce exactly the same results
+print("Symmetric Difference Squares minus Even")
+print(sorted(squares.symmetric_difference(even)))
+
+
+# Discards the value 4 from the set
+squares.discard(4)
+
+# this also does the same thing as above, removes 16 from the set
+squares.remove(16)
+
+# No error, basically it does nothing
+squares.discard(8)
+
+print(squares)
+
+# This will give us an error
+# Inorder to solve this error, we can do this
+if 8 in squares:
+    squares.remove(8)
+
+even = set(range(0, 40, 2))
+print(sorted(even))
+
+squares_tuple = (4, 6, 16)
+squares = set(squares_tuple)
+print(sorted(squares))
+
+print("\n")
+
+# Checking whether it is a subset of EVEN or not
+if squares.issubset(even):
+    print("Squares is a subset of Even")
+
+# Checking whether it is a superset of SQUARES or not
+if even.issuperset(squares):
+    print("Even is a superset of Squares")
+
+# FROZEN SETS cannot be modified, means we cannot add, remove or update any contents of the FROZEN SETS
+even = frozenset(range(0, 100, 2))
+print(even)
+
+# This will show us an error because FROZEN SETS have no attribute as ADD
+even.add(3)
+
 
